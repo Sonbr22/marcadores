@@ -1,0 +1,68 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+      gap: 8px;
+    }
+
+    .cell {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 12px 0;
+      text-align: center;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+      user-select: none;
+    }
+
+    .cell:hover {
+      background-color: #e0f7fa;
+      transform: scale(1.05);
+    }
+
+    .marked {
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+    }
+
+    #installBanner, #iosMessage {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      border-top: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 -2px 6px rgba(0,0,0,0.15);
+      z-index: 1000;
+    }
+
+    #installBanner button {
+      margin-top: 8px;
+      padding: 8px 16px;
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    #iosMessage {
+      display: none;
+    }
