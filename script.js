@@ -20,7 +20,7 @@
 
       getAll.onsuccess = () => {
         const marcados = getAll.result.map(item => item.numero);
-        for (let i = 1; i <= 1200; i++) {
+        for (let i = 1; i <= 600; i++) {
           const cell = document.createElement('div');
           cell.classList.add('cell');
           cell.textContent = i;
